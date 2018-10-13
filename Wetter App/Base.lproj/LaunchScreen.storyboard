@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +16,75 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wetter_hintergrund" translatesAutoresizingMaskIntoConstraints="NO" id="uRF-P3-3in">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0CL-Xf-nxc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leO-QK-atg">
+                                <rect key="frame" x="311" y="20" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Neg-4t-Hms"/>
+                                    <constraint firstAttribute="height" constant="64" id="iDe-42-3vU"/>
+                                </constraints>
+                                <state key="normal" image="next"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sonnig" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-g0-HSr">
+                                <rect key="frame" x="240" y="303.5" width="100" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ivQ-lo-iMX"/>
+                                    <constraint firstAttribute="width" constant="100" id="r9s-UG-Ndy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StatusLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvA-co-wMA">
+                                <rect key="frame" x="35" y="606" width="91" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="UjD-Nn-s8Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffh-6A-CQL">
+                                <rect key="frame" x="55" y="338" width="88" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hvA-co-wMA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="0NX-Qp-Tyy"/>
+                            <constraint firstItem="0CL-Xf-nxc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6Et-RP-KCO"/>
+                            <constraint firstItem="NpT-g0-HSr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6Vm-sp-ANp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NpT-g0-HSr" secondAttribute="trailing" constant="35" id="7GG-3q-tcq"/>
+                            <constraint firstItem="uRF-P3-3in" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8VS-kU-nGN"/>
+                            <constraint firstItem="Ffh-6A-CQL" firstAttribute="top" secondItem="NpT-g0-HSr" secondAttribute="bottom" constant="-25.5" id="H8H-ZI-eEA"/>
+                            <constraint firstItem="leO-QK-atg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LhK-uj-TxH"/>
+                            <constraint firstItem="0CL-Xf-nxc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OZA-z8-boq"/>
+                            <constraint firstItem="uRF-P3-3in" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PFC-CX-t06"/>
+                            <constraint firstItem="0CL-Xf-nxc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Yeo-Mr-Ae6"/>
+                            <constraint firstItem="uRF-P3-3in" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="akb-Mq-7eS"/>
+                            <constraint firstItem="uRF-P3-3in" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jYq-jf-iAs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hvA-co-wMA" secondAttribute="bottom" constant="40" id="mZI-Tc-tbr"/>
+                            <constraint firstItem="Ffh-6A-CQL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="nne-sx-Xc8"/>
+                            <constraint firstItem="leO-QK-atg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oJ0-JB-mDq"/>
+                            <constraint firstItem="0CL-Xf-nxc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vEr-ue-vWS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-97" y="385"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="next" width="64" height="64"/>
+        <image name="sonnig" width="64" height="64"/>
+        <image name="wetter_hintergrund" width="768" height="960"/>
+    </resources>
 </document>
