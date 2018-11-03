@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5A755A2021611AEE00EB7076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A755A1F21611AEE00EB7076 /* AppDelegate.swift */; };
-		5A755A2221611AEE00EB7076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A755A2121611AEE00EB7076 /* ViewController.swift */; };
 		5A755A2521611AEE00EB7076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A755A2321611AEE00EB7076 /* Main.storyboard */; };
 		5A755A2721611AEF00EB7076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A755A2621611AEF00EB7076 /* Assets.xcassets */; };
 		5A755A2A21611AEF00EB7076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A755A2821611AEF00EB7076 /* LaunchScreen.storyboard */; };
+		5ABC4AEB218DEF54006CB4B5 /* WetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC4AEA218DEF54006CB4B5 /* WetterViewController.swift */; };
+		5ABC4AED218DEF68006CB4B5 /* StadtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC4AEC218DEF68006CB4B5 /* StadtViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A755A1C21611AEE00EB7076 /* Wetter App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wetter App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A755A1F21611AEE00EB7076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A755A2121611AEE00EB7076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A755A2421611AEE00EB7076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A755A2621611AEF00EB7076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A755A2921611AEF00EB7076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A755A2B21611AEF00EB7076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ABC4AEA218DEF54006CB4B5 /* WetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetterViewController.swift; sourceTree = "<group>"; };
+		5ABC4AEC218DEF68006CB4B5 /* StadtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadtViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +57,11 @@
 			isa = PBXGroup;
 			children = (
 				5A755A1F21611AEE00EB7076 /* AppDelegate.swift */,
-				5A755A2121611AEE00EB7076 /* ViewController.swift */,
 				5A755A2321611AEE00EB7076 /* Main.storyboard */,
 				5A755A2621611AEF00EB7076 /* Assets.xcassets */,
 				5A755A2821611AEF00EB7076 /* LaunchScreen.storyboard */,
+				5ABC4AEA218DEF54006CB4B5 /* WetterViewController.swift */,
+				5ABC4AEC218DEF68006CB4B5 /* StadtViewController.swift */,
 				5A755A2B21611AEF00EB7076 /* Info.plist */,
 			);
 			path = "Wetter App";
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A755A2221611AEE00EB7076 /* ViewController.swift in Sources */,
+				5ABC4AED218DEF68006CB4B5 /* StadtViewController.swift in Sources */,
 				5A755A2021611AEE00EB7076 /* AppDelegate.swift in Sources */,
+				5ABC4AEB218DEF54006CB4B5 /* WetterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
